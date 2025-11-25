@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>AR Demo</title>
+  <title>AR Cube Test</title>
 
   <!-- A-Frame -->
   <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
@@ -24,13 +24,8 @@
 
     <!-- Маркер -->
     <a-marker type="pattern" url="marker.patt">
-      <!-- 3D-модель -->
-      <a-entity
-        gltf-model="object.gltf"
-        scale="0.5 0.5 0.5"
-        position="0 0 0"
-        rotation="0 0 0"
-      ></a-entity>
+      <!-- Красный куб вместо модели -->
+      <a-box position="0 0.5 0" scale="0.5 0.5 0.5" color="red"></a-box>
     </a-marker>
 
     <!-- Камера -->
@@ -39,4 +34,3 @@
   </a-scene>
 </body>
 </html>
-
